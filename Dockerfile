@@ -6,3 +6,4 @@ RUN apk update && \
     apk --no-cache add ca-certificates && \
     apk --no-cache add wget && \
     sed -i '/password/{s/$/ minlen=8/}' /etc/pam.d/base-password
+USER node
